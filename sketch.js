@@ -4,6 +4,10 @@ let img; // Declare variable 'img'.
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	img = loadImage('assets/blush.png'); // Load the image
+	var d = day();
+	text('Current day: \n' + d, 5, 50);
+	var y = year();
+	text('Current year: \n' + y, 5, 90);
 }
 
 function draw() {
